@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #102a43;
+    color: white;
+    padding: 16px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #38d9c0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #38d9c0;
+}
+
+.search-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.search-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    min-width: 190px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #38d9c0;
+    color: #102a43;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Homepage Hero */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    color: white;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e")
+        center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 13px 24px;
+    background: #38d9c0;
+    color: #102a43;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Page Banner */
+.page-banner {
+    text-align: center;
+    padding: 70px 20px;
+    background: #e0f2f1;
+}
+
+.page-banner h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* About Page */
+.about-content {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.about-content h2 {
+    color: #087e75;
+    margin: 25px 0 10px;
+}
+
+.about-content p,
+.about-content li {
+    margin-bottom: 12px;
+}
+
+.about-content ul {
+    padding-left: 25px;
+}
+
+/* Contact Page */
+.contact-content {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-info h2 {
+    margin-bottom: 15px;
+    color: #087e75;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font: inherit;
+}
+
+#contactForm button {
+    align-self: flex-start;
+}
+
+/* Recommendations */
+.recommendations {
+    padding: 60px 6%;
+    text-align: center;
+}
+
+.recommendations h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    text-align: left;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-6px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.destination-card-content {
+    padding: 20px;
+}
+
+.destination-card h3 {
+    color: #087e75;
+    margin-bottom: 10px;
+}
+
+.placeholder {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #64748b;
+}
+
+/* Footer */
+footer {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .search-container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+
+    .hero {
+        min-height: 65vh;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .page-banner h1 {
+        font-size: 32px;
+    }
+}

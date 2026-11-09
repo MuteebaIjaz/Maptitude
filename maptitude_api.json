@@ -1,0 +1,39 @@
+
+{
+  "beaches": [
+    {
+      "name": "Bora Bora, French Polynesia",
+      "description": "Famous for its turquoise lagoon, white sandy beaches, and beautiful overwater bungalows.",
+      "imageUrl": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21"
+    },
+    {
+      "name": "Maldives",
+      "description": "A tropical paradise with crystal-clear water, coral reefs, and stunning island resorts.",
+      "imageUrl": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8"
+    }
+  ],
+  "temples": [
+    {
+      "name": "Angkor Wat, Cambodia",
+      "description": "A magnificent ancient temple complex known for its architecture and historical significance.",
+      "imageUrl": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e"
+    },
+    {
+      "name": "Kinkaku-ji, Japan",
+      "description": "The Golden Pavilion is a famous Zen Buddhist temple surrounded by beautiful gardens.",
+      "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e"
+    }
+  ],
+  "countries": [
+    {
+      "name": "Japan",
+      "description": "Discover Japanese culture, ancient temples, modern cities, and beautiful landscapes.",
+      "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e"
+    },
+    {
+      "name": "Italy",
+      "description": "Explore historic architecture, beautiful coastlines, delicious cuisine, and cultural landmarks.",
+      "imageUrl": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963"
+    }
+  ]
+}

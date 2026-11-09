@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maptitude | Travel Recommendations</title>
+    <link rel="stylesheet" href="maptitude.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Maptitude</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="search-container">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search beaches, temples, countries..."
+            >
+            <button id="searchBtn">Search</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Next Adventure</h1>
+
+            <p>
+                Explore breathtaking beaches, historic temples,
+                and beautiful countries around the world.
+                Find your perfect destination with Maptitude.
+            </p>
+
+            <a href="#recommendations" class="explore-btn">
+                Explore Destinations
+            </a>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section class="recommendations" id="recommendations">
+        <h2>Explore Recommended Destinations</h2>
+
+        <div id="resultsContainer" class="results-container">
+            <p class="placeholder">
+                Search for beaches, temples, or countries
+                to discover amazing destinations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Maptitude. All Rights Reserved.</p>
+    </footer>
+
+    <script src="maptitude.js"></script>
+</body>
+</html>
+
