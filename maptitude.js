@@ -137,6 +137,6 @@ if (contactForm) {
         );
 
         window.location.href =
-            `mailto:contact@muteebabaloch08@gmail.com?subject=${subject}&body=${body}`;
+            `mailto:muteebabaloch08@gmail.com?subject=${subject}&body=${body}`;
     });
 }
